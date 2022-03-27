@@ -3,7 +3,7 @@ import './App.scss';
 import Home from "../components/Pages/Home";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Login from "../components/Pages/Login";
-import {ThemeContext, themes} from "../api/Theme";
+import {ThemeContext, themes} from "../theme";
 import musicDB from "../db/music";
 import {useDispatch, useSelector} from "react-redux";
 import {setPlaylist} from "../actions/actions";

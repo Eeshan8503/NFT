@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useRef, useState} from 'react';
 import '../assets/scss/AddMusic.scss';
 import {Add, Image, MusicNoteTwoTone} from "@material-ui/icons";
 import {Button} from "@material-ui/core";
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 import musicDB from "../../db/music";
 
 function AddMusic() {

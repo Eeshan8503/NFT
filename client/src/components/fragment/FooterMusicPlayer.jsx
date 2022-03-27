@@ -12,7 +12,7 @@ import Slider from "@material-ui/core/Slider";
 import {Avatar} from "@material-ui/core";
 import ControlsToggleButton from "./ControlsToggleButton";
 import Name from "./Name";
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 import {useDispatch, useSelector} from "react-redux";
 import {setBannerOpen, setCurrentPlaying} from "../../actions/actions";
 import Button from "@material-ui/core/Button";

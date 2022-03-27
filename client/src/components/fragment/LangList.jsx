@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import '../assets/scss/LangList.scss';
 import Button from "@material-ui/core/Button";
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 
 function LangList(props) {
     const [isSelected, setSelected] = useState(false);

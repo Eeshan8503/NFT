@@ -7,7 +7,7 @@ import FooterMusicPlayer from "../fragment/FooterMusicPlayer";
 import BottomNavigationMobile from "../fragment/BottomNavigationMobile";
 import MusicCardContainer from "../fragment/MusicCardContainer";
 import {useSelector} from "react-redux";
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 import Profile from "./Profile";
 import AddMusic from "../fragment/AddMusic";
 import FooterSelectMusic from "../fragment/FooterSelectMusic";

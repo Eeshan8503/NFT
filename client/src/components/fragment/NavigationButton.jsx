@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import '../assets/scss/NavigationButton.scss';
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 import {Link} from "react-router-dom";
 
 function NavigationButton(props) {

@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "../assets/scss/SideBar.scss";
 import SideBarOptions from "./SideBarOptions";
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 import {ExploreOutlined, HomeOutlined, PlaylistPlay, SearchOutlined} from "@material-ui/icons";
 
 function SideBar() {

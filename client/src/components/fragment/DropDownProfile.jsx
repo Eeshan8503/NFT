@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import '../assets/scss/DropDownProfile.scss';
-import {ThemeContext} from "../../api/Theme";
+import {ThemeContext} from "../../theme";
 import HoverButton from "./HoverButton";
 import {AccountBox} from "@material-ui/icons";
 
