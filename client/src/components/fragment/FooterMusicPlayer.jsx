@@ -166,7 +166,7 @@ function FooterMusicPlayer({music}) {
                                       changeIcon={<SkipPreviousIcon fontSize={"large"}/>}
                                       onClicked={handleToggle}/>
 
-                <audio ref={audioElement} src={require("../assets/music/" + musicName).default} preload={"metadata"}/>
+                <audio ref={audioElement} src={"https://bafybeiepcytt5ocvagt4vldt5s2ydrojxqureoohd43ltueryczend7x7u.ipfs.dweb.link/song.mp3"} preload={"metadata"}/>
 
                 <ControlsToggleButton style={pointer} type={"play-pause"}
                                       defaultIcon={<PlayArrowIcon fontSize={"large"}/>}
