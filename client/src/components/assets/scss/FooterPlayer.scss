@@ -8,14 +8,14 @@
   .playback {
     position: absolute;
     top: -14px;
-    z-index: 99999999;
+    z-index: 10;
     left: 0;
     width: 100%;
     overflow: hidden;
-    .playback-completed{
+    .playback-completed {
       width: 100%;
     }
-    .MuiSlider-thumb{
+    .MuiSlider-thumb {
       box-shadow: none !important;
     }
   }
@@ -25,7 +25,7 @@
   justify-content: flex-start !important;
   flex-grow: 1;
   height: 100%;
-  .curr-music-cover{
+  .curr-music-cover {
     padding-left: 10px;
   }
   .curr-music-details {
@@ -65,7 +65,7 @@
   .timer {
     padding-right: 10px;
   }
-  .slider{
+  .slider {
     width: 100px;
     margin: 0 20px;
   }
@@ -73,7 +73,6 @@
     padding-right: 10px;
   }
 }
-
 
 @media only screen and (max-width: 970px) {
   .footer-player {
