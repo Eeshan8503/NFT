@@ -3,10 +3,10 @@ import '../assets/scss/Navigation.scss';
 import SearchBar from "./SearchBar";
 import Brand from "./Brand";
 import { IconButton } from "@material-ui/core";
-import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import {ThemeContext} from "../../theme";
 import { Brightness3 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import SideBarRight from "./SideBarRight"
 
 function Navigation() {
     const useStyle = useContext(ThemeContext);
@@ -21,11 +21,7 @@ function Navigation() {
                     <Brightness3 />
                 </IconButton>
             </div>
-            <div className="Dark-mode">
-                <IconButton >
-                    <AccountBalanceWalletIcon />
-                </IconButton>
-            </div>
+            <SideBarRight />
             <Link to="/home/profile">
                 <div className="Profile">
                     <img src="https://img.icons8.com/fluency/96/000000/cat-profile.png" width="40px" alt=""/>

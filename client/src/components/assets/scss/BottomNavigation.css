@@ -6,6 +6,7 @@
   .bottom-navigation {
     height: 10vh;
     display: flex;
+    z-index: 1;
   }
   .bottom-navigation div {
     height: 10vh;
