@@ -38,7 +38,7 @@ const About = () => {
         const cid = await storage.put(files)
         setloader(false);
         console.log('Content added with CID:', cid)
-        alert(cid);
+        alert("Upload Successfull")
       }
       
     
