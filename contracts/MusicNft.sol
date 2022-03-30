@@ -8,29 +8,38 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract MusicNft is ERC721URIStorage {
     using Counters for Counters.Counter;
-
     // _tokenId is a unique id provided to every smart contract.
     Counters.Counter private _tokenId;
 
     // Address of market place, where we will sell the NFT
     address contractAddress;
 
-    constructor(address marketPlaceAddress)
-        ERC721("Music Streaming Token", "MST")
-    {
+    //Music metadata
+    struct musicMetadata {
+        uint104 genre;
+        uint104 language;
+        string title;
+        string description;
+    }
+
+    mapping(uint256 => musicMetadata) metadataToId;
+
+    constructor(address marketPlaceAddress) ERC721("Music Token", "MST") {
         contractAddress = marketPlaceAddress;
     }
 
-    function createToken(string memory tokenURI) public returns (uint) {
+    function createToken(string memory tokenURI, musicMetadata memory details) public returns (uint256) {
         //Set new tokenID for the token by incrementing it by 1
         _tokenId.increment();
-        uint newTokenId = _tokenId.current();
+        uint256 newTokenId = _tokenId.current();
 
         _mint(msg.sender, newTokenId); //Mint token
 
         _setTokenURI(newTokenId, tokenURI); //Generate URI
 
         setApprovalForAll(contractAddress, true); //Approve marketplace to sell the NFT
+
+        metadataToId[newTokenId] = details; //Set detils
 
         return newTokenId;
     }
