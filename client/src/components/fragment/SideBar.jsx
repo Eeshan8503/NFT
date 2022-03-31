@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "../assets/scss/SideBar.scss";
 import SideBarOptions from "./SideBarOptions";
 import {ThemeContext} from "../../theme";
-import {ExploreOutlined, HomeOutlined, PlaylistPlay, SearchOutlined} from "@material-ui/icons";
+import {ExploreOutlined, HomeOutlined, PlaylistPlay, SearchOutlined,Store} from "@material-ui/icons";
 
 function SideBar() {
     const useStyle = useContext(ThemeContext);
@@ -15,6 +15,7 @@ function SideBar() {
                 <SideBarOptions className={"lib-sub"} Icon={HomeOutlined} href={"/home"} title={"Home"} />
                 <SideBarOptions className={"lib-sub"} Icon={ExploreOutlined} href={"/home/about"}  title={"About"}/>
                 <SideBarOptions className={"lib-sub"} Icon={SearchOutlined} href={"/home/search"}  title={"Search"}/>
+                <SideBarOptions className={"lib-sub"} Icon={Store} href={"/home/market"}  title={"Market"}/>
             </div>
             <div className="aside-bar-container playlist">
                 <p className={"p1"}>
