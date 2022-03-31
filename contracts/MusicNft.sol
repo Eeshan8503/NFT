@@ -28,10 +28,18 @@ contract MusicNft is ERC721URIStorage {
         contractAddress = marketPlaceAddress;
     }
 
+    event tokenCreated(
+        uint,
+        musicMetadata
+    );
+
     function createToken(string memory tokenURI, musicMetadata memory details) public returns (uint256) {
         //Set new tokenID for the token by incrementing it by 1
         _tokenId.increment();
         uint256 newTokenId = _tokenId.current();
+
+        //Not emmited
+        emit tokenCreated(newTokenId, details);
 
         _mint(msg.sender, newTokenId); //Mint token
 
@@ -40,7 +48,7 @@ contract MusicNft is ERC721URIStorage {
         setApprovalForAll(contractAddress, true); //Approve marketplace to sell the NFT
 
         metadataToId[newTokenId] = details; //Set detils
-
+        
         return newTokenId;
     }
 }

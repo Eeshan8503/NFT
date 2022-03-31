@@ -18,16 +18,27 @@ contract("MusicMarket", async function (accounts) {
       description: "Rocking Music",
     };
 
-    const id1 = await musicNft.createToken("rhythmshandlya.io", musicMetadata);
-    const id2 = await musicNft.createToken("eeshanmattey.io", musicMetadata);
+    const id1 = await musicNft.createToken.call(
+      "rhythmshandlya.io",
+      musicMetadata
+    );
+
+    const id2 = await musicNft.createToken.call(
+      "eeshanmattey.io",
+      musicMetadata
+    );
 
     console.log("ID:", id1);
     console.log("ID:", id2);
 
-    await musicMarket.createMarketItem(musicNftAddress, id1, 1 * eather);
-    await musicMarket.createMarketItem(musicNftAddress, id2, 1 * eather);
+    const listingPrice = await musicMarket.getListingPrice();
+    console.log(listingPrice.toString());
 
-    const arr = await musicMarket.fetchMarketItems();
-    console.log(arr);
+    // await musicMarket.createMarketItem(musicNftAddress, 1, "100000000", {
+    //   value: listingPrice,
+    // });
+
+    // const arr = await musicMarket.fetchMarketItems();
+    // console.log(arr);
   });
 });
