@@ -32,18 +32,17 @@ const Web3Provider = ({ children }) => {
     
                 //===========================================================//
                 const walletContract = await loadContract("Wallet", provider);
+                const musicContract = await loadContract("MusicNft", provider);
+                const marketContract = await loadContract("MusicMarket", provider);
                 //===========================================================//
                 
-
-                console.log(">>>>>>");
-                console.log(walletContract);
-                console.log(">>>>>>");
-
                 setWeb3Api({
                     provider: provider,
                     web3: web3,
                     contract: {
-                        walletContract
+                        walletContract,
+                        musicContract,
+                        marketContract
                     },
                     isLoading: false
                 });

@@ -31,10 +31,6 @@ export default function TemporaryDrawer() {
   const [add, setAdd] = useState(0);
   const [withdraw, setWithdraw] = useState(0);
 
-  console.log("---------");
-  console.log(web3Api);
-  console.log("---------");
-
   const btn = useRef(null);
 
 

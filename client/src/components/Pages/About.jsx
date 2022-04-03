@@ -9,6 +9,8 @@ import { Brightness3 } from '@material-ui/icons';
 import process from 'process'
 import minimist from 'minimist'
 import Loader from '../fragment/Loader';
+import web3Api from '../../provider/web3/Web3Provider';
+
 // import { getFilesFromPath } from 'web3.storage'
 import { Web3Storage,getFilesFromPath } from 'web3.storage/dist/bundle.esm.min.js'
 const About = () => {
@@ -16,18 +18,12 @@ const About = () => {
     async function main (e) {
         e.preventDefault();
         console.log(e)
-        // alert("here")
-        // const args = minimist(process.argv.slice(2))
         const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDY0NTQ5NEIyM2YyRjU2QmEwNTljRDQzZjg4ZTA5RUMwMTQ4YWJFMkEiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NDgzODU3ODY5MzQsIm5hbWUiOiJNUDMifQ.FnhG2qsrOFEa24uwW7LGKnSw7rVaf3_E9dLDpy1Hr-A'
       
         if (!token) {
           return console.error('A token is needed. You can create one on https://web3.storage')
         }
-      
-        // if (args._.length < 1) {
-        //   return console.error('Please supply the path to a file or directory')
-        // }
-      
+            
         const storage = new Web3Storage({ token })
         const files = []
       
@@ -41,7 +37,10 @@ const About = () => {
         alert("Upload Successfull")
       }
       
-    
+    const handleMint = () => {
+        console.log(web3Api.contracts.musicContract);
+    }
+
     return (
         <Container>
             <div className={"About"}> 
@@ -57,10 +56,14 @@ const About = () => {
                     <br/>
                     <label>Choose your Cover Image</label><br/>
                     <input className='file' type={'file'} onChange={main}/>
-                    {/* <input type={'submit'}/> */}
-                </form>
+                    </form>
+                     <button className='button btn-lg' onClick={handleMint}>mint</button>      
+                </div>
             </div>
-            </div>
+            <br />
+            <br />
+            <br />
+            <br />
         </Container>
     );
 }
