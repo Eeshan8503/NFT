@@ -16,21 +16,24 @@ contract("MusicMarket", async function (accounts) {
       title: "Rock Me",
       description: "Rocking Music",
     };
-
-    const id1 = await musicNft.createToken.call(
+    console.log("calling createtoken")
+    const id1 = await musicNft.createToken(
       "rhythmshandlya.io",
       musicMetadata,
       { from: accounts[7] }
     );
+    
 
-    console.log("ID:", id1.toString());
+    // console.log(id1);
 
     const listingPrice = await musicMarket.getListingPrice();
     console.log(listingPrice.toString());
 
-    await musicMarket.createMarketItem(musicNftAddress, 1, "1", {
+    const id2=await musicMarket.createMarketItem(musicNftAddress, 1, "1", {
       value: listingPrice,
       from: accounts[7],
     });
+
+    console.log(id2)
   });
 });

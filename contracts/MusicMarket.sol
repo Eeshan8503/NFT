@@ -32,7 +32,7 @@ contract MusicMarket is ReentrancyGuard {
     }
 
     mapping(uint256 => marketItem) marketIdToItem;
-
+    
     event MarketItemCreated(
         uint itemId,
         uint nftId,
@@ -45,7 +45,9 @@ contract MusicMarket is ReentrancyGuard {
     function getListingPrice() public view returns (uint256) {
         return listingPrice;
     }
-
+    // function approved (address nftContract,uint256 tokenId) public{
+    //     IERC721(nftContract).approve(address(this),tokenId);   
+    // }
     function createMarketItem(
         address nftContract,
         uint256 tokenId,
@@ -56,7 +58,8 @@ contract MusicMarket is ReentrancyGuard {
             msg.value == listingPrice,
             "Amount mush be equal to listing price"
         );
-
+        //sapproved(nftContract, tokenId);
+        // emit log(msg.sender);
         _marketItemId.increment();
         uint256 itemId = _marketItemId.current();
 
@@ -68,13 +71,13 @@ contract MusicMarket is ReentrancyGuard {
             price,
             false
         );
-
-        IERC721(nftContract).safeTransferFrom(
-            msg.sender,
-            address(this),
-            tokenId
-        );
-
+        // require(_isApprovedOrOwner(msg.sender, tokenId), "ERC721: tzransfer caller is not owner nor approved"); 
+        // IERC721(nftContract).transferFrom(
+        //     msg.sender,
+        //     address(this),
+        //     tokenId
+        // );
+        //IERC721(nftContract).approve(address(this),tokenId);
         emit MarketItemCreated(
             itemId,
             tokenId,
