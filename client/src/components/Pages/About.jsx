@@ -43,21 +43,54 @@ const About = () => {
 
     return (
         <Container>
-            <div className={"About"}> 
-            <Loader display={loader}/>
-            <div className= "upload" style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-                <h1 style={{marginTop:'3%',fontSize:'2.8em'}}>Upload your Own Music</h1>
-                <br/>
-                <form>
-                    <label>Song Name</label><br/>
-                    <input className='text' type={'text'} placeholder='Song name'/><br/>
-                    <label>Choose your Audio File</label><br/>
-                    <input className='file' type={'file'} onChange={main}/>
-                    <br/>
-                    <label>Choose your Cover Image</label><br/>
-                    <input className='file' type={'file'} onChange={main}/>
+            <div className={"about"}>
+                <Loader display={loader} />
+                <div className="upload" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <h1 style={{ marginTop: '3%', fontSize: '1.8em' }}>Upload your Own Music</h1>
+                    <br />
+                    <form className='music-form'>
+                        <label>Song Name</label><br />
+                        <input className='text' type={'text'} placeholder='Song name' /><br /><br />
+                        <label>Description</label><br />
+                        <textarea className='text-area' type={'text'} placeholder='Song Description' /> <br /> <br />
+                        <div className='is-flex is-justify-content-space-around'>
+                            <div>
+                                <div class="select is-danger">
+                                    <select>
+                                        <option>Select Genre</option>
+                                        <option>Rock</option>
+                                        <option>Classic</option>
+                                        <option>Metal</option>
+                                        <option>EDM</option>
+                                        <option>Pop</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="select is-danger">
+                                    <select>
+                                        <option>Select Languaga</option>
+                                        <option>Hindi</option>
+                                        <option>English</option>
+                                        <option>Punjabi</option>
+                                        <option>Marathi</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div className='is-flex is-justify-content-space-around'>
+                            <div>
+                                <label>Choose your Audio File</label><br />
+                                <input className='file' type="file" onChange={main} /><br />
+                            </div>
+                            <div>
+                                <label>Choose your Cover Image</label><br />
+                                <input className='file' type="file" onChange={main} />
+                            </div>
+                        </div>
                     </form>
-                     <button className='button btn-lg' onClick={handleMint}>mint</button>      
+                    <button className='button btn-lg btn-danger' onClick={handleMint}>mint</button>
                 </div>
             </div>
             <br />
