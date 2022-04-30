@@ -47,14 +47,18 @@ contract MusicNft is ERC721URIStorage {
         //Not emmited
         // emit tokenCreated(newTokenId, details);
         // approved(address(this), newTokenId);
-        _mint(contractAddress, newTokenId); //Mint token
+        _mint(msg.sender, newTokenId); //Mint token
 
         _setTokenURI(newTokenId, tokenURI); //Generate URI
 
         setApprovalForAll(contractAddress, true); //Approve marketplace to sell the NFT
-
-        metadataToId[newTokenId] = details; //Set detils
         
+        metadataToId[newTokenId] = details; //Set detils
+        IERC721(address(this)).transferFrom(
+            msg.sender,
+            contractAddress,
+            newTokenId
+        );
         return newTokenId;
     }
 }
