@@ -50,13 +50,13 @@ function MusicCard(props) {
                         </div>
                         <React.Fragment>
                             <div style={{display:'flex'}}>
-                            <div style={{width:'50%'}}>
+                            <div style={{width:'70%'}}>
                             <Name name={name} className={"song-name"} length={name.length}/>
                             <Name name={author_name} className={"author-name"} length={author_name.length}/>
                             </div>
-                            <div style={{display:'flex',marginLeft:'15%',width:'50%',height:'50%'}}>
-                            <div style={{marginTop:'12%'}}>
-                            <Name name={props.price} className={"author-name"} length={props.price.length}/>
+                            <div style={{display:'flex',width:'50%',height:'50%'}}>
+                            <div style={{marginTop:'18%'}}>
+                                <Name name={props.price} className={"author-name"} length={props.price.length}/>
                             </div>
                             <img style={{transform:'scale(0.5)'}}src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="eth icon"/>
                             </div>
@@ -64,7 +64,6 @@ function MusicCard(props) {
                         </React.Fragment>
                     </>
             }
-
 
         </div>
     );

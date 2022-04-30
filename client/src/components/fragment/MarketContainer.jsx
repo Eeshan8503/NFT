@@ -11,7 +11,7 @@ function MarketCard() {
             <div className={"music-card-container"}>
                 {
                     playlists.map(item => (
-                        <MusicCard key={item.id} music={item} price="10eth"/>
+                        <MusicCard key={item.id} music={item} price="10ETH"/>
                     ))
                 }
             </div>
