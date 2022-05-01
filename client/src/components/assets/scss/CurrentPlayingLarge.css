@@ -1,0 +1,70 @@
+.CurrentPlayingLarge {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 9999999;
+}
+
+.CurrentPlayingLarge .music-left {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CurrentPlayingLarge .music-left .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CurrentPlayingLarge .music-left .music-cover {
+  width: 100%;
+  max-width: 400px;
+}
+
+.CurrentPlayingLarge .music-left .detail {
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.banner {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+@media only screen and (max-width: 970px) {
+  .CurrentPlayingLarge {
+    height: 80vh;
+  }
+}
+/*# sourceMappingURL=CurrentPlayingLarge.css.map */

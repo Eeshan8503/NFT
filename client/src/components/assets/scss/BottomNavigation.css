@@ -1,28 +1,72 @@
 .bottom-navigation {
-  display: none;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media only screen and (max-width: 970px) {
-  .bottom-navigation {
-    height: 10vh;
-    display: flex;
-    z-index: 1;
-  }
-  .bottom-navigation div {
-    height: 10vh;
-    flex-grow: 1;
-  }
-  .bottom-navigation div svg {
-    font-size: 1.9rem;
-  }
+.bottom-navigation .bottom-navigation-link {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.bottom-navigation .bottom-navigation-link .BottomNavAction {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-navigation .bottom-navigation-link .label {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  bottom: 5px;
+  color: #07689f;
+}
+
+.bottom-navigation .bottom-navigation-link .active {
+  color: #07689f;
+}
+
+.bottom-navigation .bottom-navigation-link .active + .label {
+  display: block;
+}
+
 @media only screen and (max-width: 320px) {
   .bottom-navigation div {
-    flex-shrink: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
   }
   .bottom-navigation div svg {
     font-size: 1.1rem;
   }
 }
 
-/*# sourceMappingURL=BottomNavigation.scss.map */
+@media only screen and (max-height: 610px) {
+  .bottom-navigation .bottom-navigation-link .label {
+    display: none;
+  }
+  .bottom-navigation .bottom-navigation-link .active + .label {
+    display: none;
+  }
+}
+/*# sourceMappingURL=BottomNavigation.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,sBAAsB;CACnC;;AAED,AAAA,QAAQ,AAAA,MAAM,CAAC;EACb,KAAK,EAAE,kBAAkB;EACzB,SAAS,EAAE,WAAW;EACtB,eAAe,EAAE,cAAc;CAChC",
+    "sources": [
+        "NavigationButton.scss"
+    ],
+    "names": [],
+    "file": "NavigationButton.css"
+}

@@ -1,0 +1,159 @@
+.Developer {
+  background-color: whitesmoke;
+}
+
+.Developer .Developer-head {
+  text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Developer .Developer-head span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Developer .Developer-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #bbe1fa;
+  padding: 5px;
+}
+
+.Developer .Developer-profile .Developer-profileCard {
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+}
+
+.Developer .Developer-profile .Developer-profileCard img {
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 2px;
+  width: 200px;
+}
+
+.Developer .Developer-profile .Developer-profileCard .Card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: #1e56a0;
+}
+
+.Developer .Developer-profile .Developer-profileCard .Card-details h3, .Developer .Developer-profile .Developer-profileCard .Card-details p {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.Developer .Developer-profile .Developer-profileCard .Card-details h3 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.Developer .Developer-profile .Developer-profileCard .Card-details p {
+  color: gainsboro;
+}
+
+.Developer .Developer-profile .Developer-profileDetails {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Developer .Developer-profile .Developer-profileDetails p {
+  color: black;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn {
+  background-color: #0267C1;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #a2d5f2;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a {
+  padding: 15px;
+  color: white;
+  text-transform: lowercase;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a:hover {
+  opacity: 0.8;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a:nth-child(1) {
+  background: #3B5998;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a:nth-child(2) {
+  background: #55ACEE;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a:nth-child(3) {
+  background: #125688;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a:nth-child(4) {
+  background: #007bb5;
+}
+
+.Developer .Developer-profile .Developer-profileDetails .Card-btn a:nth-child(5) {
+  background: #e74e6d;
+}
+/*# sourceMappingURL=Developer.css.map */

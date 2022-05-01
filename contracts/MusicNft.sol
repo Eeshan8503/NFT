@@ -39,6 +39,7 @@ contract MusicNft is ERC721URIStorage {
         IERC721(nftContract).approve(contractAddress,tokenId);  
         emit approvedd(true) ;
     }
+    //Create token and immediately transfer to MusicContract
     function createToken(string memory tokenURI, musicMetadata memory details) public returns (uint256) {
         //Set new tokenID for the token by incrementing it by 1
         _tokenId.increment();

@@ -2,40 +2,45 @@
   position: absolute;
   z-index: 100000;
   top: 67px;
-  right: 9vw;
-  display: flex;
-  flex-flow: column;
-  background-color: #fff;
-  border-radius: 0 0 10px 10px;
+  right: 7px;
   width: 20vw;
-  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 10px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
+
 .dropdown .dropdown-head {
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
+
 .dropdown .dropdown-head p {
   color: gray;
 }
-.dropdown .lang-list {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%;
-}
-.dropdown .lang-list button {
-  margin: 5px;
-}
-.dropdown .lang-list button:hover {
-  background-color: #1abc9c;
-  cursor: pointer;
-}
+
 .dropdown .button-div {
   width: 100%;
 }
+
+.dropdown .button-div a {
+  width: 100%;
+}
+
 .dropdown .button-div button {
   width: 100%;
   padding: 7px;
-  background-color: #1abc9c;
   border: none;
 }
-
-/*# sourceMappingURL=DropDownLanguageList.scss.map */
+/*# sourceMappingURL=DropDown.css.map */

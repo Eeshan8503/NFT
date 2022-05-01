@@ -1,0 +1,15 @@
+.Nav-btn {
+  padding-right: 10px;
+  font-size: 1.1rem;
+  -webkit-transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out;
+}
+
+.Nav-btn:hover {
+  color: #07689f !important;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-text-decoration: underline #333;
+          text-decoration: underline #333;
+}
+/*# sourceMappingURL=NavigationButton.css.map */

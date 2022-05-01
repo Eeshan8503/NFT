@@ -1,0 +1,18 @@
+.Playlist h3 {
+  background-color: #333333;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.Playlist .Playlist-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=Playlist.css.map */

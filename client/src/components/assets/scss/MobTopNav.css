@@ -1,16 +1,24 @@
 .mob-top-navigation {
-  display: none;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-height: 610px) {
   .mob-top-navigation {
     height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-  }
-  .mob-top-navigation div {
-    padding: 2px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
 }
-
-/*# sourceMappingURL=MobTopNav.scss.map */
+/*# sourceMappingURL=MobTopNav.css.map */

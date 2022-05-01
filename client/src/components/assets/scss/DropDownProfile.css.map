@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["DropDownProfile.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;;AACD;EACD;EACK","file":"DropDownProfile.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,MAAM;EACf,GAAG,EAAE,IAAI;EACT,KAAK,EAAE,GAAG;EACV,aAAa,EAAE,aAAa;EAC5B,MAAM,EAAE,iBAAiB;EACzB,WAAW,EAAE,IAAI;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAIvB;;AAbD,AAUE,iBAVe,CAUf,gBAAgB,CAAA;EACd,KAAK,EAAE,OAAO;CACf",
+    "sources": [
+        "DropDownProfile.scss"
+    ],
+    "names": [],
+    "file": "DropDownProfile.css"
+}

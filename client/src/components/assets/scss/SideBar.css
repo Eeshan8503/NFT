@@ -1,57 +1,73 @@
 .aside-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 80vh;
   overflow: auto;
-  background-color: #faf5f5;
+  border-right: 1px solid #e0e0e0;
 }
-.aside-bar .library-container {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  flex-shrink: 1;
-  width: 100%;
-  padding: 15px;
-}
-.aside-bar .library-container .lib-sub {
-  padding: 10px 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.aside-bar .library-container .lib-sub:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-.aside-bar .playlist-container {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 10px;
-}
-.aside-bar .playlist-container .playlist {
-  display: flex;
-  flex: 1;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-}
-.aside-bar .playlist-container .playlist .p1 {
+
+.aside-bar .p1 {
+  border-bottom: 1px solid #e0e0e0;
   padding: 15px;
   font-weight: bolder;
-  font-size: 1.3rem;
-  color: gray;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-.aside-bar .playlist-container .playlist .list-cont {
-  padding: 15px;
+
+.aside-bar .lib-sub {
+  padding: 10px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.aside-bar .playlist-container .playlist .list-cont:hover {
-  background-color: #282c34;
-  color: white;
-  cursor: pointer;
-  border-radius: 99px;
+
+.aside-bar .lib-sub .MuiButton-startIcon {
+  color: #07689f;
+}
+
+.aside-bar .aside-bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+}
+
+.aside-bar .playlist {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aside-bar .playlist .p1 {
+  border-top: 1px solid #e0e0e0;
+}
+
+.aside-bar .playlist .lib-sub:hover {
+  background-color: #a2d5f2;
 }
 
 @media only screen and (max-width: 970px) {
@@ -59,5 +75,4 @@
     display: none;
   }
 }
-
-/*# sourceMappingURL=SideBar.scss.map */
+/*# sourceMappingURL=SideBar.css.map */

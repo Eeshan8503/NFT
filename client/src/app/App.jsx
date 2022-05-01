@@ -6,10 +6,8 @@ import Login from "../components/Pages/Login";
 import {ThemeContext, themes} from "../theme";
 
 const App = () => {
-
-
     return (
-        <ThemeContext.Provider value={themes.light}>
+        <ThemeContext.Provider value={themes.dark}>
             <>
                 <Router>
                     <Switch>

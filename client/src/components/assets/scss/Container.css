@@ -1,0 +1,15 @@
+.Container {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.Container > div {
+  height: 100%;
+}
+
+@media only screen and (max-width: 970px) {
+  .Container {
+    height: 70vh;
+  }
+}
+/*# sourceMappingURL=Container.css.map */

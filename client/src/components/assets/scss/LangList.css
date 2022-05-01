@@ -1,0 +1,12 @@
+.lang-list {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.lang-list button {
+  margin: 5px;
+}
+/*# sourceMappingURL=LangList.css.map */
